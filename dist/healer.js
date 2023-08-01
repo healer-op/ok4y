@@ -15,7 +15,7 @@ fetch(`https://raw.githubusercontent.com/healer-op/HealCloud/main/json/zionl.jso
     var orderId = orderId.toUpperCase()
     var index = Math.floor(Math.random() * data.imgs.length);
     var datas = data.temp;
-    console.log(data);
+    // console.log(data);
     const html = data.temp1.map((img, i) =>{
         return `
         <div class="list-item">
@@ -45,4 +45,4 @@ fetch(`https://raw.githubusercontent.com/healer-op/HealCloud/main/json/zionl.jso
 })
 }
 healer()
-setInterval(function() {console.log("hello");healer()}, 2500);
+setInterval(function() {healer()}, 2500);
